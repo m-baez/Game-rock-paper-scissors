@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/game.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Game</title>
+  </head>
+  <body>
+    <div class="game">
+      <header class="header">
+        <p class="header-title">
+          Rock <br />
+          Paper <br />
+          Scissors
+        </p>
+        <div class="header-score">
+          <p>Score</p>
+          <p class="score"></p>
+        </div>
+      </header>
+
+      <section class="game-table">
+        <img class="table-triangle" src="img/bg-triangle.svg" alt="" />
+
+        <div class="paper">
+          <div class="button-main">
+            <a
+              class="button-paper button-choice"
+              href="javascript:void(0)"
+              data-item="paper"
+            >
+              <img src="img/icon-paper.svg" alt="paper" />
+            </a>
+          </div>
+        </div>
+
+        <div class="scissors">
+          <div class="button-main">
+            <a
+              class="button-scissors button-choice"
+              href="javascript:void(0)"
+              data-item="scissors"
+            >
+              <img src="img/icon-scissors.svg" alt="scissors" />
+            </a>
+          </div>
+        </div>
+
+        <div class="rock">
+          <div class="button-main">
+            <a
+              class="button-rock button-choice"
+              href="javascript:void(0)"
+              data-item="rock"
+            >
+              <img src="img/icon-rock.svg" alt="rock" />
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="game-result">
+        <div class="results-block">
+          <div class="user">
+            <h2>You picked</h2>
+            <div class="user-choice">
+              <div class="button-block"></div>
+            </div>
+          </div>
+
+          <div class="show-result">
+            <h3 class="result"></h3>
+            <button class="restart">Play again</button>
+          </div>
+
+          <div class="comp">
+            <h2>The house picked</h2>
+            <div class="comp-choice">
+              <div class="preview">
+                <div class="button-block"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="rules-block">
+        <div class="rules">
+          <p>Rules</p>
+        </div>
+      </section>
+    </div>
+  </body>
+  <script src="js/game.js"></script>
+  <!-- <script src="js/test.js"></script> -->
+</html>
