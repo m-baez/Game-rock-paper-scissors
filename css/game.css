@@ -159,10 +159,6 @@ body {
   color: #172741;
   letter-spacing: 3px;
 }
-/* .results-block button:hover {
-  color: red;
-  font-size: 2em;
-} */
 .user,
 .comp {
   display: flex;
@@ -178,7 +174,7 @@ body {
 }
 .show-result {
   flex-direction: column;
-  order: 1;
+  /* order: 1; */
   padding-top: 3em;
 }
 .result {
