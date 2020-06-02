@@ -20,7 +20,8 @@ body {
 .game {
   display: flex;
   flex-direction: column;
-  width: 100%;
+  max-width: 375px;
+  margin: auto;
 }
 
 /* --- Estilos de header general --- */
@@ -181,3 +182,114 @@ body {
   font-size: 3.2em;
   margin-bottom: 0.3em;
 }
+
+/* @media (min-width: 600px) {
+  body {
+    padding: 0;
+    overflow: hidden;
+  }
+  .top {
+    border-radius: 10px;
+    padding: 20px 30px;
+  }
+
+  .top .logo img {
+    max-width: 100%;
+  }
+  .score {
+    border-radius: 10px;
+    padding: 15px 30px;
+  }
+  .score h2 {
+    font-size: 2rem;
+  }
+  .game {
+    width: var(--desktop);
+    width: 1000px;
+    padding: 15px;
+  }
+  .game__board {
+    background-size: auto;
+    padding: 4rem 0;
+  }
+  .button-main {
+    padding: 20px;
+    width: 180px;
+    height: 180px;
+  }
+  .button-paper,
+  .button-scissors,
+  .button-rock {
+    width: 140px;
+    height: 140px;
+    box-shadow: inset 0em 0.5em #b9bed2;
+  }
+  .button-main img {
+    width: auto;
+  }
+  .paper .button-main {
+    box-shadow: 0px 7px 0px #2946c0;
+  }
+  .scissors .button-main {
+    box-shadow: 0px 7px 0px #c76c1c;
+  }
+  .rock .button-main {
+    box-shadow: 0px 7px 0px #9d1633;
+  }
+  .rules-block {
+    justify-content: flex-end;
+  }
+
+  .modal-content {
+    width: 40%;
+  }
+
+  .results-block .user,
+  .results-block .comp {
+    display: flex;
+    flex-direction: column;
+  }
+  .results-block h2 {
+    font-size: 2rem;
+    letter-spacing: 1px;
+    padding: 0;
+    margin-bottom: 1rem;
+  }
+  .results-block button {
+    padding: 15px 50px;
+    font-size: 1.2rem;
+  }
+
+  .results-block .comp .comp-choice .preview {
+    width: 200px;
+    height: 200px;
+    margin: 45px 0;
+  }
+  .results-block .button-main {
+    width: 250px;
+    height: 250px;
+    border-radius: 200px;
+  }
+  .results-block .button-main a {
+    width: 180px;
+    height: 180px;
+    border-radius: 200px;
+  }
+  .results-block .button-main a img {
+    width: 80px;
+  }
+  .results-block .show-result {
+    order: 0;
+    padding-top: 0;
+  }
+
+  .winner-wrapper {
+    top: 70px;
+    width: 160px;
+    height: 160px;
+  }
+
+  .attribution {
+    padding: 2rem 0;
+  }
+} */
