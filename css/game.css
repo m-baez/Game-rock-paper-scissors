@@ -151,7 +151,7 @@ body {
   letter-spacing: 2px;
   padding-top: 2em;
 }
-.results-block button {
+/* .results-block button {
   border: none;
   font-size: 0.9em;
   padding: 0.9em 3.5em;
@@ -159,6 +159,17 @@ body {
   cursor: pointer;
   color: #172741;
   letter-spacing: 3px;
+} */
+.restart {
+  text-decoration: none;
+  font-size: 0.9em;
+  padding: 0.9em 3.5em;
+  background-color: #ffffff;
+  border-radius: 8px;
+  color: #172741;
+  letter-spacing: 3px;
+  cursor: pointer;
+  display: none;
 }
 .user,
 .comp {

@@ -42,7 +42,7 @@ function checkWinner() {
     switch (true) {
       case userChoice === compChoice:
         gameResultTitle.textContent = "Tie Game";
-        console.log("Tie Game");
+        // console.log("Tie Game");
         break;
       case (userChoice === "paper" && compChoice === "rock") ||
         (userChoice === "rock" && compChoice === "scissors") ||
@@ -56,7 +56,10 @@ function checkWinner() {
         score -= 1;
         scoreValue.textContent = score;
     }
-  }, 1000);
+  }, 1500),
+    setTimeout(() => {
+      btnRestart.style.display = "block";
+    }, 2000);
 }
 
 function waitCompChoice(choice) {
@@ -116,6 +119,6 @@ btnChoices.forEach((button) => {
 });
 
 btnRestart.addEventListener("click", () => {
-  console.log("restart");
+  // console.log("restart");
   restartGame();
 });
